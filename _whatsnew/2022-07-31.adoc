@@ -1,0 +1,15 @@
+= データソースとしての FSx for ONTAP
+:allow-uri-read: 
+
+
+
+
+=== データソースとしての FSx for ONTAP
+
+Amazon FSx for ONTAPファイルシステムから次の宛先にデータをレプリケートできるようになりました。
+
+* Amazon FSx for ONTAP
+* オンプレミスのONTAPクラスタ
+
+
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["データレプリケーションの設定方法を学ぶ"] 。

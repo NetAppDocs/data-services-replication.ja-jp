@@ -1,0 +1,25 @@
+---
+indexpage:
+  title: NetAppレプリケーションのドキュメント
+  summary: ONTAPストレージ システム間でデータを複製し、クラウドまたはクラウド間のバックアップと災害復旧をサポートします。
+  keywords: replicate, storage systems, disaster recovery, cloud
+  lead: ONTAPストレージ システム間でデータを複製し、クラウドまたはクラウド間のバックアップと災害復旧をサポートします。
+  tiles:
+  - title: 始めましょう
+    links:
+    - title: NetAppレプリケーションについて学ぶ
+      url: concept-replication.html
+    - title: データレプリケーションを設定する
+      url: task-replicating-data.html
+  - title: NetAppレプリケーションを使用する
+    links:
+    - title: データ複製を管理する
+      url: task-managing-replication.html
+  - title: ブログとコミュニティ
+    links:
+    - title: NetAppコンソール
+      url: https://www.netapp.com/console
+    - title: NetAppデータサービス
+      url: https://www.netapp.com/data-services/
+    - title: NetAppコミュニティ
+      url: https://community.netapp.com

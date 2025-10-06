@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: concept-replication.html 
+keywords: ontap, cluster, discover, manage, BlueXP, bluexp,hybrid cloud, replication policy, policy, replication, replicating, snapmirror, snapvault, data replication, fanout, cascade, source, destination, disaster recovery, DR, archive, archiving, retention, netapp replication 
+summary: NetApp SnapMirror は、LAN または WAN 経由で高速にデータを複製するため、仮想環境と従来の環境の両方で高いデータ可用性と高速なデータ複製を実現します。 NetAppストレージ システムにデータを複製し、セカンダリ データを継続的に更新すると、データは最新の状態に保たれ、必要なときにいつでも利用できるようになります。外部のレプリケーション サーバーは必要ありません。 
+---
+= NetAppレプリケーションについて学ぶ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SnapMirror は、LAN または WAN 経由で高速にデータを複製するため、仮想環境と従来の環境の両方で高いデータ可用性と高速なデータ複製を実現します。 NetAppレプリケーションを使用してデータをNetAppストレージ システムに複製し、セカンダリ データを継続的に更新すると、データは最新の状態に保たれ、必要なときにいつでも利用できるようになります。外部のレプリケーション サーバーは必要ありません。
+
+
+
+== NetAppコンソール
+
+NetAppレプリケーションは、 NetAppコンソールからアクセスできます。
+
+NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとデータ サービスの集中管理を提供します。NetAppデータ サービスにアクセスして使用するには、コンソールが必要です。管理インターフェースとして、1 つのインターフェースから多数のストレージ リソースを管理できます。コンソール管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。
+
+NetAppコンソールの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。
+
+詳細はこちら https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetAppコンソール"]。
+
+
+
+== 機能
+
+* ONTAPストレージ システム間でデータを複製し、クラウドまたはクラウド間のバックアップと災害復旧をサポートします。
+* 高可用性により DR 環境の信頼性を確保します。
+* ONTAPストレージ間のブロックレベルのレプリケーションは高速かつ効率的で、DR とバックアップの両方に対してきめ細かなリカバリ ポイントが提供されます。
+
+
+
+
+== 料金
+
+NetApp はNetApp Replication の使用に対して料金を請求しませんが、適用されるデータの受信および送信料金についてはクラウド プロバイダーに確認する必要があります。
+
+
+
+== サポートされているシステム
+
+NetAppレプリケーションでは、次の種類のシステム間でのデータ レプリケーションが可能になります。
+
+[cols="30,30"]
+|===
+| ソースシステム | サポートされているターゲットシステム 
+
+
+| Cloud Volumes ONTAP  a| 
+* Amazon FSx for ONTAP
+* Cloud Volumes ONTAP
+* オンプレミスのONTAPクラスター
+
+
+
+
+| オンプレミスのONTAPクラスター  a| 
+* Amazon FSx for ONTAP
+* Cloud Volumes ONTAP
+* オンプレミスのONTAPクラスター
+
+
+
+
+| Amazon FSx for ONTAP  a| 
+* Amazon FSx for ONTAP
+* Cloud Volumes ONTAP
+* オンプレミスのONTAPクラスター
+
+
+|===
+
+
+== データ複製の仕組み
+
+NetAppレプリケーションは、 SnapMirrorおよびSnapVaultテクノロジーを使用して、個別のONTAPシステム上のボリューム間のデータ レプリケーションを簡素化します。ソース ボリュームとデスティネーション ボリュームを指定し、レプリケーション ポリシーとスケジュールを選択するだけです。
+
+Cloud Volumes ONTAPの場合、 NetApp Replication は必要なディスクを購入し、関係を構成し、レプリケーション ポリシーを適用して、ボリューム間のベースライン転送を開始します。
+
+
+NOTE: ベースライン転送には、ソース データの完全なコピーが含まれます。後続の転送にはソース データの差分コピーが含まれます。
+
+
+
+== サポートされているデータ保護構成
+
+NetAppレプリケーションは、シンプル、ファンアウト、カスケードのデータ保護構成をサポートします。
+
+* 単純な構成では、ボリューム A からボリューム B へのレプリケーションが行われます。
+* ファンアウト構成では、ボリューム A から複数の宛先へのレプリケーションが行われます。
+* カスケード構成では、ボリューム A からボリューム B へ、またボリューム B からボリューム C へレプリケーションが行われます。
+
+
+
+
+== NetAppバックアップとリカバリを使用してデータを複製する
+
+NetAppコンソール エージェント 3.9.31 リリース以降、 NetApp Backup and Recovery では、 SnapMirrorおよびSnapVaultテクノロジを使用して、別のONTAPシステム上のボリューム間でデータを複製できるようになりました。したがって、他のONTAPシステムにデータを複製し、同じデータのバックアップをオブジェクトストレージに作成する予定の場合は、 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["NetAppバックアップとリカバリ"^]単一のサービスでデータ保護のニーズを管理できるようになります。
+
+現在、次の機能はNetAppレプリケーションでのみサポートされており、 NetApp Backup and Recovery のレプリケーション機能を使用する場合はサポートされません。
+
+* ボリューム A からボリューム B へ、そしてボリューム B からボリューム C へレプリケーションが行われるカスケード構成はサポートされていません。
+* FSx for ONTAPシステムとの間でのデータの複製はサポートされていません。
+* ボリュームの 1 回限りのレプリケーションの作成はサポートされていません。
+
+
+したがって、これらの機能のいずれかが必要な場合は、 NetAppレプリケーションを使用してください。
