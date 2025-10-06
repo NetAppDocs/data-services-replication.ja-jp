@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-replication.html 
 keywords: replication policy, policy, replication, replicating, snapmirror, snapvault, data replication, source, destination, schedule, relationship, break, resync, max transfer, maximum transfer rate, rate, transfer rate, reverse resync, status, replication status, disaster recovery, DR, archive, archiving, retention 
-summary: 2 つのシステム間でデータ レプリケーションを設定したら、 NetAppレプリケーションからデータ レプリケーションのスケジュールと関係を管理できます。 
+summary: 2 つのシステム間のデータ レプリケーションを設定したら、 NetApp Replicationからデータ レプリケーションのスケジュールと関係を管理できます。 
 ---
 = NetApp Replicationでデータレプリケーションを管理する
 :hardbreaks:
@@ -14,10 +14,10 @@ summary: 2 つのシステム間でデータ レプリケーションを設定�
 
 
 [role="lead"]
-2 つのシステム間でデータ レプリケーションを設定したら、 NetAppレプリケーションからデータ レプリケーションのスケジュールと関係を管理できます。
+2 つのシステム間のデータ レプリケーションを設定したら、 NetApp Replicationからデータ レプリケーションのスケジュールと関係を管理できます。
 
 .手順
-. link:task-login-replication.html["NetAppレプリケーションにログイン"] 。
+. link:task-login-replication.html["NetApp Replicationにログイン"] 。
 . データ レプリケーション関係のステータスを確認し、正常であることを確認します。
 +
 
@@ -66,4 +66,4 @@ NOTE: ボリュームを再同期すると、宛先ボリュームの内容が�
 
 
 .結果
-アクションを選択すると、 NetAppレプリケーションによって関係またはスケジュールが更新されます。
+アクションを選択すると、 NetApp Replication関係またはスケジュールが更新されます。

@@ -10,7 +10,7 @@ settings:
   langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: NetAppレプリケーション ドキュメント
+  - title: NetApp Replicationドキュメント
     url: "/index.html"
   - title: リリース ノート
     entries:
@@ -18,9 +18,9 @@ sidebar:
       url: "/whats-new.html"
   - title: 始めましょう
     entries:
-    - title: NetAppレプリケーションについて学ぶ
+    - title: NetApp Replicationについて学ぶ
       url: "/concept-replication.html"
-    - title: NetAppレプリケーションにログイン
+    - title: NetApp Replicationにログイン
       url: "/task-login-replication.html"
     - title: データレプリケーションを設定する
       url: "/task-replicating-data.html"

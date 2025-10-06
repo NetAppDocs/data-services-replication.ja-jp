@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-login-replication.html 
 keywords: copy and sync, NetApp Replication, log in to Replication, NetApp BlueXP, BlueXP Replication, NetApp Console 
-summary: NetAppコンソールを使用してNetAppレプリケーションにログインします。 
+summary: NetApp Consoleを使用してNetApp Replicationにログインします。 
 ---
-= NetAppレプリケーションにログイン
+= NetApp Replicationにログイン
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,14 @@ summary: NetAppコンソールを使用してNetAppレプリケーションに�
 
 
 [role="lead"]
-NetAppコンソールを使用してNetAppレプリケーションにログインします。
+NetApp Consoleを使用してNetApp Replicationにログインします。
 
 コンソールにログインするには、 NetAppサポート サイトの認証情報を使用するか、電子メールとパスワードを使用してNetAppクラウド ログインにサインアップすることができます。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["ログインについて詳しくはこちら"^] 。
 
 .手順
-. ウェブブラウザを開いて、 https://console.netapp.com/["NetAppコンソール"^] 。
+. ウェブブラウザを開いて、 https://console.netapp.com/["NetApp Console"^] 。
 +
-NetAppコンソールのログイン ページが表示されます。
+NetApp Consoleのログイン ページが表示されます。
 
 . コンソールにログインします。
 . コンソールの左側のナビゲーションから、*保護* > *レプリケーション* を選択します。

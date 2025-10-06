@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-replication-policies.html 
 keywords: replication policy, policy, replication, replicating, snapmirror, snapvault, data replication, disaster recovery, DR 
-summary: NetAppコンソールでデータ レプリケーションを設定するときに、レプリケーション ポリシーの選択に関する支援が必要になる場合があります。レプリケーション ポリシーは、ストレージ システムがソース ボリュームから宛先ボリュームにデータを複製する方法を定義します。 
+summary: NetApp Consoleでデータ レプリケーションを設定するときに、レプリケーション ポリシーの選択に関する支援が必要になる場合があります。レプリケーション ポリシーは、ストレージ システムがソース ボリュームから宛先ボリュームにデータを複製する方法を定義します。 
 ---
-= NetAppレプリケーションで使用されるレプリケーションポリシーについて学習します
+= NetApp Replicationで使用されるレプリケーション ポリシーについて学習します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetAppコンソールでデータ レプリケーションを設定す�
 
 
 [role="lead"]
-NetAppレプリケーションでデータ レプリケーションを設定するときに、レプリケーション ポリシーの選択に関する支援が必要になる場合があります。レプリケーション ポリシーは、ストレージ システムがソース ボリュームから宛先ボリュームにデータを複製する方法を定義します。
+NetApp Replicationでデータ レプリケーションを設定するときに、レプリケーション ポリシーの選択に関する支援が必要になる場合があります。レプリケーション ポリシーは、ストレージ システムがソース ボリュームから宛先ボリュームにデータを複製する方法を定義します。
 
 
 
