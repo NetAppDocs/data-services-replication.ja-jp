@@ -18,6 +18,7 @@ NetApp SnapMirror は、LAN または WAN 経由で高速にデータを複製�
 
 
 
+[[netapp-console]]
 == NetApp Console
 
 NetApp Replicationは、NetApp Consoleからアクセスできます。
@@ -26,10 +27,11 @@ NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエ
 
 NetApp Consoleの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。
 
-詳細はこちら https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp Console"]。
+ https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"]の詳細については、こちらをご覧ください。
 
 
 
+[[features]]
 == 機能
 
 * ONTAPストレージ システム間でデータを複製し、クラウドまたはクラウド間のバックアップと災害復旧をサポートします。
@@ -39,12 +41,14 @@ NetApp Consoleの使用を開始するためにライセンスやサブスクリ
 
 
 
+[[cost]]
 == 料金
 
 NetApp はNetApp Replication の使用に対して料金を請求しませんが、適用されるデータの受信および送信料金についてはクラウド プロバイダーに確認する必要があります。
 
 
 
+[[supported-systems]]
 == サポートされているシステム
 
 NetApp Replicationでは、次の種類のシステム間でのデータ レプリケーションが可能になります。
@@ -79,6 +83,7 @@ NetApp Replicationでは、次の種類のシステム間でのデータ レプ�
 |===
 
 
+[[how-data-replication-works]]
 == データ複製の仕組み
 
 NetApp Replicationは、 SnapMirrorおよびSnapVaultテクノロジーを使用して、個別のONTAPシステム上のボリューム間のデータ レプリケーションを簡素化します。ソース ボリュームとデスティネーション ボリュームを指定し、レプリケーション ポリシーとスケジュールを選択するだけです。
@@ -90,6 +95,7 @@ NOTE: ベースライン転送には、ソース データの完全なコピー�
 
 
 
+[[supported-data-protection-configurations]]
 == サポートされているデータ保護構成
 
 NetApp Replicationは、シンプル、ファンアウト、カスケードのデータ保護構成をサポートします。
@@ -101,9 +107,10 @@ NetApp Replicationは、シンプル、ファンアウト、カスケードの�
 
 
 
+[[replicate-data-using-netapp-backup-and-recovery]]
 == NetApp Backup and Recoveryを使用してデータを複製する
 
-NetApp Consoleエージェント 3.9.31 リリース以降、 NetApp Backup and Recoveryでは、 SnapMirrorおよびSnapVaultテクノロジを使用して、別のONTAPシステム上のボリューム間でデータを複製できるようになりました。したがって、他のONTAPシステムにデータを複製し、同じデータのバックアップをオブジェクトストレージに作成する予定の場合は、 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["NetApp Backup and Recovery"^]単一のサービスでデータ保護のニーズを管理できるようになります。
+NetApp Console エージェント 3.9.31 リリース以降、NetApp Backup and Recovery では、SnapMirror および SnapVault テクノロジーを使用して、別の ONTAP システム上のボリューム間でデータをレプリケートできます。したがって、他の ONTAP システムへのデータのレプリケートを計画しており、同じデータのバックアップをオブジェクトストレージに作成する場合は、単一のサービスでデータ保護のニーズを管理できるように https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["NetApp Backup and Recovery"^]を使用することをご検討ください。
 
 現在、次の機能はNetApp Replicationでのみサポートされており、 NetApp Backup and Recoveryのレプリケーション機能を使用する場合はサポートされません。
 

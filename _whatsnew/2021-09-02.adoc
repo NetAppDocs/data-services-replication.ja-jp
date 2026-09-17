@@ -4,8 +4,9 @@
 
 
 
+[[support-for-amazon-fsx-for-ontap]]
 === Amazon FSx for ONTAPのサポート
 
 Cloud Volumes ONTAPシステムまたはオンプレミスのONTAPクラスターからAmazon FSx for ONTAPファイルシステムにデータを複製できるようになりました。
 
-https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["データレプリケーションの設定方法を学ぶ"] 。
+link:https://docs.netapp.com/us-en/data-services-replication/task-replicating-data.html["データレプリケーションの設定方法を学ぶ"]。

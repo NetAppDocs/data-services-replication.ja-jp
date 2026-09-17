@@ -18,6 +18,7 @@ NetApp Replicationでデータ レプリケーションを設定するときに�
 
 
 
+[[what-replication-policies-do]]
 == レプリケーションポリシーは
 
 ONTAPオペレーティング システムは、スナップショット コピーと呼ばれるバックアップを自動的に作成します。スナップショット コピーは、ある時点でのファイル システムの状態をキャプチャするボリュームの読み取り専用イメージです。
@@ -33,6 +34,7 @@ image:diagram_replication_policies.png["この図は、ソース ボリューム
 
 
 
+[[types-of-replication-policies]]
 == レプリケーションポリシーの種類
 
 レプリケーション ポリシーには 3 つの種類があります。
