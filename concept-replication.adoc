@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-replication.html 
-keywords: ontap, cluster, discover, manage, BlueXP, bluexp,hybrid cloud, replication policy, policy, replication, replicating, snapmirror, snapvault, data replication, fanout, cascade, source, destination, disaster recovery, DR, archive, archiving, retention, netapp replication 
+keywords: ontap, cluster, discover, manage, BlueXP, bluexp, hybrid cloud, replication policy, policy, replication, replicating, snapmirror, snapvault, data replication, fanout, cascade, source, destination, disaster recovery, DR, archive, archiving, retention, netapp replication 
 summary: NetApp SnapMirror は、LAN または WAN 経由で高速にデータを複製するため、仮想環境と従来の環境の両方で高いデータ可用性と高速なデータ複製を実現します。 NetAppストレージ システムにデータを複製し、セカンダリ データを継続的に更新すると、データは最新の状態に保たれ、必要なときにいつでも利用できるようになります。外部のレプリケーション サーバーは必要ありません。 
 ---
 = NetApp Replicationについて学ぶ
@@ -23,7 +23,7 @@ NetApp SnapMirror は、LAN または WAN 経由で高速にデータを複製�
 
 NetApp Replicationは、NetApp Consoleからアクセスできます。
 
-NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとデータ サービスの集中管理を提供します。NetAppデータ サービスにアクセスして使用するには、コンソールが必要です。管理インターフェースとして、1 つのインターフェースから多数のストレージ リソースを管理できます。コンソール管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。
+NetApp Console は、オンプレミスおよびクラウド環境全体にわたる NetApp ストレージとデータサービスをエンタープライズクラスのレベルで一元管理します。Console は、NetApp データサービスにアクセスして使用するために必要です。管理インターフェイスとして、1つのインターフェイスから多数のストレージリソースを管理できます。Console 管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。
 
 NetApp Consoleの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。
 
@@ -61,15 +61,15 @@ NetApp Replicationでは、次の種類のシステム間でのデータ レプ�
 | Cloud Volumes ONTAP  a| 
 * Amazon FSx for ONTAP
 * Cloud Volumes ONTAP
-* オンプレミスのONTAPクラスタ
+* オンプレミス ONTAP クラスタ
 
 
 
 
-| オンプレミスのONTAPクラスタ  a| 
+| オンプレミス ONTAP クラスタ  a| 
 * Amazon FSx for ONTAP
 * Cloud Volumes ONTAP
-* オンプレミスのONTAPクラスタ
+* オンプレミス ONTAP クラスタ
 
 
 
@@ -77,7 +77,7 @@ NetApp Replicationでは、次の種類のシステム間でのデータ レプ�
 | Amazon FSx for ONTAP  a| 
 * Amazon FSx for ONTAP
 * Cloud Volumes ONTAP
-* オンプレミスのONTAPクラスタ
+* オンプレミス ONTAP クラスタ
 
 
 |===
@@ -112,7 +112,7 @@ NetApp Replicationは、シンプル、ファンアウト、カスケードの�
 
 NetApp Console エージェント 3.9.31 リリース以降、NetApp Backup and Recovery では、SnapMirror および SnapVault テクノロジーを使用して、別の ONTAP システム上のボリューム間でデータをレプリケートできます。したがって、他の ONTAP システムへのデータのレプリケートを計画しており、同じデータのバックアップをオブジェクトストレージに作成する場合は、単一のサービスでデータ保護のニーズを管理できるように https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["NetApp Backup and Recovery"^]を使用することをご検討ください。
 
-現在、次の機能はNetApp Replicationでのみサポートされており、 NetApp Backup and Recoveryのレプリケーション機能を使用する場合はサポートされません。
+NetApp Backup and Recovery では、NetApp Replication で利用可能な次の機能はサポートされていません：
 
 * ボリューム A からボリューム B へ、そしてボリューム B からボリューム C へレプリケーションが行われるカスケード構成はサポートされていません。
 * FSx for ONTAPシステムとの間でのデータの複製はサポートされていません。

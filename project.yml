@@ -37,6 +37,8 @@ sidebar:
       url: "/concept-backup-policies.html"
   - title: 知識とサポート
     entries:
+    - title: FAQ
+      url: "/faq-replication.html"
     - title: サポートに登録する
       url: "/task-support-registration.html"
     - title: ヘルプを受ける

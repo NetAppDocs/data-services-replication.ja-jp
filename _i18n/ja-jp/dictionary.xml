@@ -12,7 +12,6 @@
   <block id="747ef7cb70bddb84c8ef27217b868e12" category="doc">BlueXP replicationはNetApp Replicationになりました</block>
   <block id="57ff97c571d4da9035b6687a3eb97fea" category="paragraph">BlueXP replicationがNetApp Replicationに変更されました。</block>
   <block id="bc2fe31b1e2682a9a79513d792e9c721" category="section-title">BlueXPはNetApp Consoleになりました</block>
-  <block id="995c8f79a8e07fbd8d519e45d03d6004" category="paragraph">NetApp Consoleは、強化され再構築されたBlueXP基盤上に構築され、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとNetApp Data Servicesの集中管理を提供し、リアルタイムの分析情報、より高速なワークフロー、および高度なセキュリティとコンプライアンスを備えた簡素化された管理を実現します。</block>
   <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link-macro">NetApp Consoleのリリースノート</block>
   <block id="9b93e4b231bbb8d1c7051b84c23381d9" category="summary">ミラー ポリシーとは異なり、バックアップSnapVaultポリシーは特定のスナップショット コピーを宛先ボリュームに複製します。デフォルトのポリシーの代わりに独自のポリシーを使用する場合は、バックアップ ポリシーがどのように機能するかを理解することが重要です。</block>
   <block id="13214bc1cee198bcd45ff3058afbe997" category="doc">NetApp Replicationで使用されるバックアップポリシーについて学習します</block>
@@ -21,8 +20,6 @@
   <block id="39254c75b5bfbd2872343b33d19fae8b" category="paragraph">スナップショット ポリシーは、システムがボリュームのスナップショット コピーを作成する方法を定義します。ポリシーでは、スナップショット コピーをいつ作成するか、いくつのコピーを保持するか、およびそれらのラベル付け方法を指定します。たとえば、システムは毎日午前 12 時 10 分にスナップショット コピーを 1 つ作成し、最新の 2 つのコピーを保持して、それらに「毎日」というラベルを付けます。</block>
   <block id="2204cd649631fa42bda6fe0400aa1cd0" category="paragraph">バックアップ ポリシーには、宛先ボリュームに複製するラベル付きスナップショット コピーと保持するコピーの数を指定するルールが含まれます。バックアップ ポリシーで定義されたラベルは、スナップショット ポリシーで定義された 1 つ以上のラベルと一致する必要があります。そうしないと、システムはスナップショットのコピーを複製できません。</block>
   <block id="5bc7c9de27975c17950e7fb086105c6b" category="paragraph">たとえば、「毎日」および「毎週」のラベルを含むバックアップ ポリシーでは、それらのラベルのみを含むスナップショット コピーがレプリケーションされます。次の図に示すように、他のスナップショット コピーは複製されません。</block>
-  <block id="083c26181de8b3b647fa5365a515a238" category="inline-image-macro">この図は、スナップショット ポリシー、ソース ボリューム、スナップショット ポリシーから作成されたスナップショット コピー、および「毎日」および「毎週」のラベルが付いたスナップショット コピーのレプリケーションを指定するバックアップ ポリシーに基づいて、それらのスナップショット コピーを宛先ボリュームにレプリケーションする様子を示しています。</block>
-  <block id="b31733bfcf9651bc6c623260dc3572d3" category="paragraph"><block ref="b31733bfcf9651bc6c623260dc3572d3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="078de5bc4b102703fbb5d5f16eab4ac5" category="section-title">デフォルトポリシーとカスタムポリシー</block>
   <block id="794c2bacad35583b2cc20bd0556629ce" category="paragraph">デフォルトのスナップショット ポリシーでは、時間別、日次、週次スナップショット コピーが作成され、時間別スナップショット コピーが 6 つ、日次スナップショット コピーが 2 つ、週次スナップショット コピーが 2 つ保持されます。</block>
   <block id="a4d82668b58d9042d53ccaa4ade08011" category="paragraph">デフォルトのスナップショット ポリシーでは、デフォルトのバックアップ ポリシーを簡単に使用できます。デフォルトのバックアップ ポリシーでは、毎日および毎週のスナップショット コピーが複製され、毎日 7 個と毎週 52 個のスナップショット コピーが保持されます。</block>
@@ -56,7 +53,6 @@
   <block id="85efdfd389ac173deb467cd0ea30bdbf" category="paragraph">NetApp SnapMirror は、LAN または WAN 経由で高速にデータを複製するため、仮想環境と従来の環境の両方で高いデータ可用性と高速なデータ複製を実現します。 NetApp Replicationを使用してデータをNetAppストレージ システムに複製し、セカンダリ データを継続的に更新すると、データは最新の状態に保たれ、必要なときにいつでも利用できるようになります。外部のレプリケーション サーバーは必要ありません。</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="section-title">NetApp Console</block>
   <block id="84082264837e9806d736236151badff0" category="paragraph">NetApp Replicationは、NetApp Consoleからアクセスできます。</block>
-  <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとデータ サービスの集中管理を提供します。NetAppデータ サービスにアクセスして使用するには、コンソールが必要です。管理インターフェースとして、1 つのインターフェースから多数のストレージ リソースを管理できます。コンソール管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。</block>
   <block id="7118a6b22768dabe4720d84710ea1e43" category="paragraph">NetApp Consoleの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">機能</block>
   <block id="4d8208136280cbaba3cab05e5996a3a8" category="list-text">ONTAPストレージ システム間でデータを複製し、クラウドまたはクラウド間のバックアップと災害復旧をサポートします。</block>
@@ -70,7 +66,6 @@
   <block id="ed82c965d60c0d74a85f7a3ee3c8b83c" category="cell">サポートされているターゲットシステム</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="cell">Cloud Volumes ONTAP</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
-  <block id="c17ce6a7cdcb97581c6d5603ec7d447a" category="list-text">オンプレミスのONTAPクラスタ</block>
   <block id="b553c40a28c07760917a84d00649f7fd" category="section-title">データ複製の仕組み</block>
   <block id="ab48329b04181ea1425540e3a6fe3fe5" category="paragraph">NetApp Replicationは、 SnapMirrorおよびSnapVaultテクノロジーを使用して、個別のONTAPシステム上のボリューム間のデータ レプリケーションを簡素化します。ソース ボリュームとデスティネーション ボリュームを指定し、レプリケーション ポリシーとスケジュールを選択するだけです。</block>
   <block id="0a6e3d7b708a2efcacdf12db0f7ef453" category="paragraph">Cloud Volumes ONTAPの場合、 NetApp Replication は必要なディスクを購入し、関係を構成し、レプリケーション ポリシーを適用して、ボリューム間のベースライン転送を開始します。</block>
@@ -82,7 +77,6 @@
   <block id="7a850141034065e0218996db71a2ef0c" category="list-text">カスケード構成では、ボリューム A からボリューム B へ、またボリューム B からボリューム C へレプリケーションが行われます。</block>
   <block id="e2a73062a43d971014e79321452e41d1" category="section-title">NetApp Backup and Recoveryを使用してデータを複製する</block>
   <block id="cc6088539286339733631d73fb51774b" category="inline-link">NetApp Backup and Recovery</block>
-  <block id="4731c16d17a906073fd315deea647210" category="paragraph">現在、次の機能はNetApp Replicationでのみサポートされており、 NetApp Backup and Recoveryのレプリケーション機能を使用する場合はサポートされません。</block>
   <block id="e012112c73378e2a2d1fd1a0fa9c2795" category="list-text">ボリューム A からボリューム B へ、そしてボリューム B からボリューム C へレプリケーションが行われるカスケード構成はサポートされていません。</block>
   <block id="baf48e0aa2c3928a76f5ae4cfa863af0" category="list-text">FSx for ONTAPシステムとの間でのデータの複製はサポートされていません。</block>
   <block id="0c23616cc33d59b54422397ae3ade277" category="list-text">ボリュームの 1 回限りのレプリケーションの作成はサポートされていません。</block>
@@ -161,14 +155,12 @@
   <block id="1b8ced9c4e8c56b65fcb6a4dfa719297" category="doc">NetApp Replicationにログイン</block>
   <block id="8e917942a77709dfd28c155f42a97553" category="inline-link">ログインについて詳しくはこちら</block>
   <block id="6a65fb509b9c682f9df5eb122484e2f7" category="list-text">ウェブブラウザを開いて、<block ref="d6205946f936217747639e85e1340e8f" category="inline-link-rx"></block> 。</block>
-  <block id="0daac1b9cd4c3a240bf2f6b44ba178a1" category="paragraph">NetApp Consoleのログイン ページが表示されます。</block>
   <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">コンソールにログインします。</block>
   <block id="771a03d32a408b4653c26249844b6885" category="list-text">コンソールの左側のナビゲーションから、*保護* &gt; *レプリケーション* を選択します。</block>
   <block id="fad0f00219691e250f806aa4e6fda7a3" category="summary">2 つのシステム間のデータ レプリケーションを設定したら、 NetApp Replicationからデータ レプリケーションのスケジュールと関係を管理できます。</block>
   <block id="1d14714a562273c31a3aa99c9f0c4a3f" category="doc">NetApp Replicationでデータレプリケーションを管理する</block>
   <block id="b066406edb729146f43744df2852f1cd" category="list-text"><block ref="665f1db0ee19fa6751ad5f37fc96ca64" category="inline-link-macro-rx"></block> 。</block>
   <block id="775f5846d28de12857c9c89ae5d4a6e1" category="list-text">データ レプリケーション関係のステータスを確認し、正常であることを確認します。</block>
-  <block id="384cf3526eba01b7701f7fde08ba751e" category="admonition">関係のステータスがアイドルで、ミラー状態が初期化されていない場合は、定義されたスケジュールに従ってデータ レプリケーションが実行されるように、宛先システムから関係を初期化する必要があります。 System Manager またはコマンドライン インターフェイス (CLI) を使用して関係を初期化できます。これらの状態は、宛先システムに障害が発生し、その後オンラインに戻ったときに発生することがあります。</block>
   <block id="d869f083beb7cac7876401bafaeba676" category="list-text">ボリューム関係のアクション メニューを選択し、使用可能なアクションの 1 つを選択します。</block>
   <block id="7e237ab45b209987e5eb6464c44abac5" category="paragraph">次の表では、利用可能なアクションについて説明します。</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">アクション</block>
@@ -192,14 +184,11 @@
   <block id="06933067aafd48425d67bcb01bba5cb6" category="cell">更新</block>
   <block id="16685aa35f9f2843a357407642b0d7d9" category="cell">増分転送を開始して、宛先ボリュームを更新します。</block>
   <block id="f2a6c498fb90ee345d997f888fce3b18" category="cell">削除</block>
-  <block id="d1325501ee070fd499d61b4cb3ec234d" category="cell">ソース ボリュームと宛先ボリューム間のデータ保護関係を削除します。これにより、ボリューム間でデータのレプリケーションは行われなくなります。このアクションでは、データ アクセス用の宛先ボリュームはアクティブ化されません。</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="63fb159a291d0f518004be82ab44509b" category="paragraph">アクションを選択すると、 NetApp Replication関係またはスケジュールが更新されます。</block>
-  <block id="d250467f9102169f504e016ab78b6cda" category="summary">データ転送用の 1 回限りのデータ レプリケーション、または災害復旧や長期保存用の定期的なスケジュールを選択することで、 ONTAPシステム間でデータを複製できます。たとえば、災害復旧のためにオンプレミスのONTAPシステムからCloud Volumes ONTAPへのデータ レプリケーションを設定できます。</block>
   <block id="79d6e23629075ae4f230f2a003115b67" category="doc">NetApp Replicationでデータレプリケーションを設定する</block>
   <block id="92e912ca8707f6f34130e1b10d2d138b" category="paragraph">NetApp Replicationを使用すると、データ転送用の 1 回限りのデータ レプリケーション、または災害復旧や長期保存用の定期的なスケジュールを選択して、 ONTAPシステム間でデータを複製できます。たとえば、災害復旧のためにオンプレミスのONTAPシステムからCloud Volumes ONTAPへのデータ レプリケーションを設定できます。</block>
   <block id="46ebfd1e0393caa0f34b574489afb56f" category="section-title">ステップ1: データ複製要件を確認する</block>
-  <block id="3f5c98f2da3fd65fbbfa955b13a433ab" category="paragraph">データを複製する前に、 Cloud Volumes ONTAP、オンプレミスのONTAPクラスター、またはAmazon FSx for ONTAPの特定の要件が満たされていることを確認する必要があります。</block>
   <block id="b31df235e8aee38fd08600c353af2b52" category="list-text">システム</block>
   <block id="347a6d5ba577ca1fc3fbf1c018c62c3e" category="list-text">まだ行っていない場合は、データ レプリケーション関係のソースとターゲットのシステムを作成する必要があります。</block>
   <block id="5df55e7de34e04e3fbd5d9ffd4e44939" category="inline-link">Amazon FSx for ONTAPシステムを作成する</block>
@@ -223,12 +212,10 @@
   <block id="97d76d6ad65338f9dc1e8196be488382" category="paragraph"><block ref="97d76d6ad65338f9dc1e8196be488382" category="inline-link-rx"></block></block>
   <block id="4f473a2a941d4fd7b4a68e3cd98e934c" category="list-text">Amazon FSx for ONTAP固有の要件</block>
   <block id="0b2859515841917b8dcb93767366e15a" category="list-text">Cloud Volumes ONTAP が関係の一部である場合は、VPC ピアリングを有効にするか、Transit Gateway を使用して、VPC 間の接続を確保します。</block>
-  <block id="7cdb830daf27295ef13d47b3f05f431f" category="list-text">オンプレミスのONTAPクラスターが関係の一部である場合は、Direct Connect または VPN 接続を使用して、オンプレミス ネットワークと AWS VPC 間の接続を確保します。</block>
   <block id="94d63941f5733e2475f76dcc24cbaab4" category="section-title">ステップ2: システム間でデータを複製する</block>
   <block id="ab180709f75f8b8d74709444b839ccd3" category="paragraph">クラウドとの間でデータを移動する際に役立つ 1 回限りのデータ レプリケーション、または災害復旧や長期保存に役立つ定期的なスケジュールを選択して、データをレプリケートできます。</block>
   <block id="c27deb5ada399336a287848889d2032c" category="list-text">ナビゲーション メニューから、*ストレージ &gt; 管理* を選択します。</block>
   <block id="da9b02f648ef7bfd9330c1dbfda0bf3d" category="list-text">[システム] ページで、ソース ボリュームを含むシステムを選択し、ボリュームを複製するシステムにドラッグして、[レプリケーション] を選択します。</block>
-  <block id="2be8439d89ba35425f3565fe4d0cc2a1" category="paragraph">残りの手順では、Cloud Volumes ONTAPまたはオンプレミスのONTAPクラスター間の同期関係を作成する方法の例を示します。</block>
   <block id="362a388c30edcb2f99cceb3fe86d98c1" category="list-text">*ソースおよび宛先ピアリング設定*: このページが表示されたら、クラスタ ピア関係のすべてのクラスタ間 LIF を選択します。</block>
   <block id="bea31cd643e991ddda33528781bb08e5" category="paragraph">クラスタ間ネットワークは、クラスタ ピアがペアワイズ フル メッシュ接続を持つように構成する必要があります。つまり、クラスタ ピア関係にある各クラスタ ペアは、すべてのクラスタ間 LIF 間で接続が確立されます。</block>
   <block id="2de4794fb8257073e92d6ea494fd0157" category="paragraph">これらのページは、複数の LIF を持つONTAPクラスタがソースまたはデスティネーションである場合に表示されます。</block>
@@ -316,7 +303,6 @@
   <block id="30926cdd94e56dd228449e15c0e4474c" category="sidebar">バックアップポリシーについて学ぶ</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="0f231b26db0712e781ba6b320f9743cd" category="paragraph"><block ref="3c728b36fb7e64f9bacf61c5cc751dfd" category="inline-link-macro-rx"></block>。</block>
-  <block id="97b280e5efe476ea0da6f16b16427d9c" category="paragraph">変更点の詳細については、<block ref="b78e17cf58c4e309929c8d6a69594c7d" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="6edeb5e7f8d6c86621cc7603e861b9ba" category="doc">FSx for ONTAP との既存の関係に対するレプリケーション管理</block>
   <block id="12ad030c730fdc0c585b94ec9fbfc39b" category="paragraph">ソースまたはターゲットとしてのFSx for ONTAPファイルシステムのレプリケーション関係管理が、NetApp Workload Factoryで利用できるようになりました。</block>
   <block id="0b1fa8def44610bb724d3d46f4ace772" category="paragraph"><block ref="0b1fa8def44610bb724d3d46f4ace772" category="inline-link-macro-rx"></block></block>
@@ -383,4 +369,70 @@
   <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">これはシステムによって生成されたIDで、お客様のメールアドレスにマッピングされます。*NSS管理*ページの<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニューからメールアドレスを表示できます。</block>
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">ログイン資格情報トークンを更新する必要がある場合は、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> メニューに*資格情報の更新*オプションもあります。</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026年4月13日</block>
+  <block id="56ed5396ea479b4ed31e75f97a4377c7" category="paragraph">強化され再構築されたBlueXP基盤上に構築されたNetApp Consoleは、エンタープライズグレードでオンプレミスおよびクラウド環境全体のNetAppストレージとNetApp Data Servicesを一元管理し、リアルタイムのインサイト、より迅速なワークフロー、高度にセキュアでコンプライアンスに準拠したシンプルな管理を実現します。</block>
+  <block id="79964b441fca8822ab19b6baa88e278c" category="paragraph">変更点の詳細については、<block ref="b78e17cf58c4e309929c8d6a69594c7d" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="792473ac08ba1d84d09bda502700cb0c" category="inline-image-macro">スナップショット ポリシー、ソース ボリューム、スナップショット ポリシーから作成されたスナップショット コピー、そして「日次」および「週次」ラベルのスナップショット コピーのレプリケーションを指定するバックアップ ポリシーに基づいて、それらのスナップショット コピーをデスティネーション ボリュームにレプリケーションする様子を示す図。</block>
+  <block id="b58558e4b87bbbbcf3ed5075994b12ff" category="paragraph"><block ref="b58558e4b87bbbbcf3ed5075994b12ff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8b6b78cd1bb83bad974b3603f73eb784" category="paragraph">NetApp Console は、オンプレミスおよびクラウド環境全体にわたる NetApp ストレージとデータサービスをエンタープライズクラスのレベルで一元管理します。Console は、NetApp データサービスにアクセスして使用するために必要です。管理インターフェイスとして、1つのインターフェイスから多数のストレージリソースを管理できます。Console 管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。</block>
+  <block id="bdb2d3899da6b930cee3298f5d2ff27e" category="list-text">オンプレミス ONTAP クラスタ</block>
+  <block id="ef5c77728394babb7a239ba936c1c170" category="paragraph">NetApp Backup and Recovery では、NetApp Replication で利用可能な次の機能はサポートされていません：</block>
+  <block id="a89fd6d44f5c703629f123c702cee3ce" category="summary">NetApp Replicationに関するよくある質問を確認します。サポートされている構成と一般的な問題の解決方法についても説明します。</block>
+  <block id="241064fdb3668edab39d563b99a082ae" category="doc">NetApp ReplicationのFAQ</block>
+  <block id="ad887e05c9bfed86a937c456b4221cfc" category="paragraph">このFAQでは、NetApp Replicationに関するよくある質問にお答えします。ONTAPシステム、Cloud Volumes ONTAP、およびAmazon FSx for ONTAPの間のレプリケーション関係の設定、管理、トラブルシューティングに役立つ概念、用語、および動作に焦点を当てています。</block>
+  <block id="4d7b600bf3d13b9f9a09d120b6dc4000" category="section-title">一般概念</block>
+  <block id="b15e8993431423d84785e5796fa53259" category="paragraph-title">レプリケーションは、どのソースシステムとターゲットシステムの組み合わせをサポートしていますか？</block>
+  <block id="f3e4337f3f5d8647666ce6e6629c966a" category="paragraph">レプリケーションは、Amazon FSx for ONTAP、Cloud Volumes ONTAP、およびオンプレミス ONTAP をサポートしています。これら3つのシステム間で任意の組み合わせでレプリケーションを設定できます。</block>
+  <block id="462bdcf0423f40c0e9b7831ed6fec489" category="paragraph-title">レプリケーションはどのようなデータ保護構成をサポートしていますか？</block>
+  <block id="35dffd6aeb02a08baff39b4becb437ee" category="paragraph">レプリケーションは、次の3つの構成をサポートしています：</block>
+  <block id="549c10ed6f1f4d1e5fb4b5a84fdaaebd" category="list-text">*シンプル*：複製はボリューム A からボリューム B へ行われます。</block>
+  <block id="70b26eed0c34208669e1e549d2546e2c" category="list-text">*ファンアウト*：ボリューム A から複数のデスティネーションにレプリケーションが行われます。</block>
+  <block id="3d28137a0e79e8a038b533cc11571921" category="list-text">*カスケード*：レプリケーションはボリューム A からボリューム B へ、そしてボリューム B からボリューム C へと行われます。</block>
+  <block id="5663e080cd7e5d5d4d7fdf3e2a202f71" category="paragraph-title">最初のレプリケーション転送時と、その後の転送時では、何が起こるのでしょうか？</block>
+  <block id="8d632b24a258000ed601ac42b935579f" category="paragraph">ベースライン転送には、ソースデータの完全なコピーが含まれます。以降の転送には、ソースデータの差分（増分）コピーのみが含まれます。</block>
+  <block id="e2bc9a959db6de2ddb5821f5e7071051" category="paragraph-title">レプリケーションの利用には費用がかかりますか？</block>
+  <block id="f4f694c722c1f4939d5a4c461ed30cf3" category="paragraph">NetApp はレプリケーション自体の使用料を請求しませんが、適用されるデータの送受信料金についてはクラウド プロバイダにご確認ください。NetApp Console では、ストレージ システムやデータ サービスに接続するために Console エージェントをデプロイすると料金が発生します。Console からアクセスできるその他の一部の NetApp データ サービスは、ライセンス制またはサブスクリプション制です。</block>
+  <block id="5095de5b852af52e766eabfbefd4936a" category="paragraph-title">レプリケーションを使用するには、ライセンスまたはサブスクリプションが必要ですか？</block>
+  <block id="58c386740f25deec6dc4854eb0a8e2ab" category="paragraph">ConsoleやReplicationの使用を開始するために、ライセンスやサブスクリプションは必要ありません。オンプレミスのONTAP構成では、アクティブなSnapMirrorライセンスがインストールされている必要があります。</block>
+  <block id="fa26829830efe73376071e3b30f66d6a" category="section-title">レプリケーションポリシー</block>
+  <block id="0ef25f2b488e6812ca4aaadf9d584ed7" category="paragraph-title">ミラー ポリシーとバックアップ ポリシーの違いは何ですか？</block>
+  <block id="b76f4ad4b7b84f515f3ead1ec22aea4f" category="list-text">*ミラー*：新しく作成されたSnapshotコピーをデスティネーション ボリュームにレプリケートします。ディザスタリカバリの準備や1回限りのデータレプリケーションに役立ちます。デスティネーション ボリュームはいつでもデータアクセス用にアクティブ化できます。</block>
+  <block id="989089db41a8a08514c74b0b380f6cd4" category="list-text">*バックアップ*：特定のラベル付きSnapshotコピーをデスティネーション ボリュームにレプリケートし、通常はソース ボリュームよりも長く保持します。破損または失われたデータのリストアやコンプライアンス/ガバナンスの目的に役立ちます。</block>
+  <block id="01db9a537fa740b34e98dbcaba448f26" category="list-text">*ミラーリングとバックアップ*：災害復旧と長期保存の両方を組み合わせたもので、各システムに標準で含まれているポリシーです。</block>
+  <block id="bfc23db214aa3d4c9137e004300a5daf" category="paragraph">デフォルトのポリシーがニーズに合わない場合は、System Manager を使用してカスタム ポリシーを作成できます。</block>
+  <block id="dba2fec3d5fb0b2bd0a7fbe79b268d51" category="paragraph-title">バックアップ ポリシーがスナップショット コピーをレプリケートしないのはなぜですか？</block>
+  <block id="fe9f30730c00bde204737621bdd6f88c" category="paragraph">バックアップ ポリシーは、ソースボリュームのスナップショットポリシーで定義されたラベルと一致するラベルを持つスナップショットコピーのみを複製します。カスタムバックアップ ポリシーのラベルがスナップショットポリシーのいずれのラベルにも一致しない場合、システムはスナップショットコピーを複製できません。例えば、「daily」と「weekly」というラベルが付いたバックアップ ポリシーは、それらのラベルが付いたスナップショットコピーのみを複製します。</block>
+  <block id="fbc49b064493ba7e8d974ce22d91223e" category="paragraph-title">デフォルトのポリシーを使用した場合、デフォルトのスナップショット保持設定はどうなりますか？</block>
+  <block id="950cc66663a4715b1a860822cc1b3565" category="paragraph">デフォルトのスナップショットポリシーでは、1時間ごと、1日ごと、1週間ごとのスナップショットコピーが作成され、それぞれ6つの1時間ごとのコピー、2つの1日ごとのコピー、2つの1週間ごとのコピーが保持されます。デフォルトのバックアップ ポリシーでは、日次および週次のスナップショットコピーが複製され、7つの日次スナップショットコピーと52の週次スナップショットコピーが保持されます。</block>
+  <block id="3fafd5a26264a03e0481352a71a345dd" category="section-title">レプリケーションの設定</block>
+  <block id="388c9a4cdc656d1471c16abd069c6d22" category="paragraph-title">データレプリケーションを設定する前に、何をチェックする必要がありますか？</block>
+  <block id="578ead3423bd73dcfd9322c1da499755" category="paragraph">データの複製を行う前に、以下の点を確認してください。</block>
+  <block id="b8f61f2b56d288396af55515f9f65741" category="list-text">ソースシステムとターゲットシステムはすでに存在している（または新たに作成する）。</block>
+  <block id="dfb5334e419a2cb6df28bff3565bde04" category="inline-link-macro">互換性のある ONTAP バージョン</block>
+  <block id="dedb7ab8eeef2550d08ab4ba9651b6cc" category="list-text">ソースボリュームとデスティネーション ボリュームで互換性のある ONTAP バージョンが実行されていることを確認してください。詳細については、<block ref="2524f1344404e49c451dfcb6a15f8877" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="484b8ec938f50c415d91ff00271e5bf9" category="inline-link-macro">データ複製要件</block>
+  <block id="369afc8f7c214ff3fbbd220e977fa51b" category="list-text"><block ref="0a67d5eefa2d8eff4e58910c63e5bd9b" category="inline-link-macro-rx"></block>のシステム固有の要件を満たしていることを確認してください。</block>
+  <block id="427d63c27e3c8784b8cef62f5d53bd17" category="paragraph-title">クラスタ間 LIF 間でクラスタ ピアリングが正しく機能するために必要な条件は何ですか？</block>
+  <block id="e2d6c3a382112d0ccd3348b954e24e25" category="paragraph">クラスタ間ネットワークは、クラスタ ピアがペアワイズフルメッシュ接続を持つように構成する必要があります。つまり、クラスタ ピア関係にある各クラスタのペアが、すべてのクラスタ間LIF間で接続性を持つということです。これは、複数のLIFを持つ ONTAP クラスタが送信元またはデスティネーションである場合に適用されます。</block>
+  <block id="09c389f830614941753ef32ff1394f40" category="paragraph-title">カスタムのレプリケーションスケジュールを作成できますか？</block>
+  <block id="d1ca64d7c3636616888dba74e06357bb" category="paragraph">レプリケーションを設定する際には、いくつかのデフォルトのスケジュールが利用可能です。別のスケジュールが必要な場合は、System Manager を使用してデスティネーション クラスタで新しいスケジュールを作成する必要があります。</block>
+  <block id="98fcca61229f1d20f3ef1ae8236cbceb" category="section-title">レプリケーション関係の管理</block>
+  <block id="111b3fbb29b885f5a7ea3392dcc00972" category="paragraph-title">レプリケーション関係がアイドル ステータスおよび未初期化ミラー状態を示している場合、それはどういう意味ですか？</block>
+  <block id="b05b62dcbc1a6573f2f1ce0af2386247" category="paragraph">これは、デスティネーション システムに障害が発生した後、再びオンラインに戻った場合に発生する可能性があります。定義されたスケジュールに従ってデータ レプリケーションを再開するには、デスティネーション システムから System Manager または CLI を使用してリレーションシップを初期化する必要があります。</block>
+  <block id="6a33fa207fc4c15ad3d9675e29eeb2a1" category="paragraph-title">ブレーク、リシンク、リバースリシンクの各アクションの違いは何ですか？</block>
+  <block id="4f9e6587acfdcb3d25c22a653c6a9cc1" category="paragraph">これらの操作はそれぞれ異なる効果をもたらします。</block>
+  <block id="ee891ddd083a15002899315ef0b1e18b" category="list-text">*Break*： ソース ボリュームとデスティネーション ボリューム間の関係を解除し、デスティネーション ボリュームをデータ アクセス用にアクティブ化します。通常、ソース ボリュームが破損、削除、またはオフライン状態のためにデータを提供できない場合に使用されます。</block>
+  <block id="721db7146d3e776cc96b95b61483b0b9" category="list-text">*再同期*：切断された関係を再確立し、スケジュールどおりにレプリケーションを再開します。デスティネーション ボリュームの内容は、ソース ボリュームの内容で上書きされます。</block>
+  <block id="65213d0abd0024a3427697f0937e638e" category="list-text">*リバースリシンク*：ソースボリュームとデスティネーション ボリュームの役割を反転させ、元のソースボリュームの内容をデスティネーション ボリュームの内容で上書きします。前回のレプリケーションからオフラインになるまでの間に元のソースボリュームに書き込まれたデータは保持されません。</block>
+  <block id="d636ff85d755017b6b4313fa45893093" category="paragraph-title">レプリケーション関係を削除するとどうなりますか？</block>
+  <block id="82a05f7022c9c9fa440c5a6b7303c81d" category="paragraph">ソースボリュームとデスティネーション ボリューム間のデータ保護関係を削除すると、ボリューム間のデータ レプリケーションが終了し、デスティネーション サイトから SnapMirror 関係が削除され、ソース サイトからその関係が解放されます。また、SnapMirror 関係を解除することで、デスティネーション ボリュームを一時的に読み取り / 書き込み操作のプライマリ サイトとして設定し、レプリケーション削除後もデスティネーションを独立して使用できるようにします。</block>
+  <block id="f47bfd2f62c666f76043ec96658ba787" category="paragraph-title">最大転送速度を無制限のままにせず、制限する必要があるのはなぜですか？</block>
+  <block id="0bd54cb978251f9c0ebc7f61509c3538" category="paragraph">無制限の転送速度は、他のアプリケーションのパフォーマンスやインターネット接続のパフォーマンスに悪影響を与える可能性があります。レプリケーションの設定時に最大転送速度（メガバイト/秒単位で指定）を制限することをお勧めします。後でレプリケーション ステータス ページから編集することもできます。</block>
+  <block id="e161a34cdd4234d92b075d220b5684b1" category="admonition">関係のステータスがアイドルで、ミラー状態が初期化されていない場合、定義されたスケジュールに従ってデータレプリケーションを実行するには、デスティネーション システムから関係を初期化する必要があります。System Manager またはコマンドラインインターフェイス（CLI）を使用して、関係を初期化できます。これらの状態は、デスティネーション システムに障害が発生した後、オンラインに戻った際に発生する可能性があります。</block>
+  <block id="bad3dec294d93cb258d5783c4e0b71b9" category="paragraph">ソース ボリュームとデスティネーション ボリューム間のデータ保護関係を削除します。これにより、ボリューム間のデータ レプリケーションが終了し、デスティネーション サイトから SnapMirror 関係が削除され、ソース サイトから関係が解放されます。</block>
+  <block id="c754d83ac82e981d2e98d917680b9a2c" category="admonition">関係を削除すると、SnapMirror関係も解除され、デスティネーション ボリュームが一時的に読み取り / 書き込み操作のプライマリサイトになります。これにより、レプリケーションが削除された後もデスティネーションを独立して使用できることが保証されます。</block>
+  <block id="ba9d6eded83572eb4594b855880f86db" category="summary">1回限りのデータ複製またはディザスタリカバリや長期保持のための定期的なスケジュールを選択することで、ONTAP システム間でデータを複製できます。たとえば、ディザスタリカバリのためにオンプレミス ONTAP システムから Cloud Volumes ONTAP へのデータレプリケーションを設定できます。</block>
+  <block id="5c03764bcda56f41a78260a4ff3600c3" category="paragraph">データをレプリケートする前に、Cloud Volumes ONTAP、オンプレミス ONTAPクラスタ、またはAmazon FSx for ONTAPに関する特定の要件が満たされていることを確認する必要があります。</block>
+  <block id="b0eb6ed488c79bd6acace4af9e187976" category="list-text">オンプレミス ONTAP クラスタがその関係の一部である場合は、Direct Connect または VPN 接続を使用して、オンプレミス ネットワークと AWS VPC 間の接続を確保してください。</block>
+  <block id="349392d09ab3591a720b65ca5741db0f" category="paragraph">残りの手順では、Cloud Volumes ONTAP またはオンプレミス ONTAP クラスター間で同期関係を作成する方法の例を示します。</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
 </blocks>

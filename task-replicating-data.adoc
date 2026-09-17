@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-replicating-data.html 
 keywords: ontap, cluster, discover, manage, BlueXP, hybrid cloud, replication policy, policy, replication, replicating, snapmirror, snapvault, data replication, fanout, cascade, source, destination, schedule, relationship, max transfer, maximum transfer rate, rate, transfer rate, intercluster lif, replication requirement, requirements, disaster recovery, DR, archive, archiving, retention, amazon fsx for ontap, fsx for ontap 
-summary: データ転送用の 1 回限りのデータ レプリケーション、または災害復旧や長期保存用の定期的なスケジュールを選択することで、 ONTAPシステム間でデータを複製できます。たとえば、災害復旧のためにオンプレミスのONTAPシステムからCloud Volumes ONTAPへのデータ レプリケーションを設定できます。 
+summary: 1回限りのデータ複製またはディザスタリカバリや長期保持のための定期的なスケジュールを選択することで、ONTAP システム間でデータを複製できます。たとえば、ディザスタリカバリのためにオンプレミス ONTAP システムから Cloud Volumes ONTAP へのデータレプリケーションを設定できます。 
 ---
 = NetApp Replicationでデータレプリケーションを設定する
 :hardbreaks:
@@ -21,7 +21,7 @@ NetApp Replicationを使用すると、データ転送用の 1 回限りのデ�
 [[step-1-review-data-replication-requirements]]
 == ステップ1: データ複製要件を確認する
 
-データを複製する前に、 Cloud Volumes ONTAP、オンプレミスのONTAPクラスター、またはAmazon FSx for ONTAPの特定の要件が満たされていることを確認する必要があります。
+データをレプリケートする前に、Cloud Volumes ONTAP、オンプレミス ONTAPクラスタ、またはAmazon FSx for ONTAPに関する特定の要件が満たされていることを確認する必要があります。
 
 システム:: まだ行っていない場合は、データ レプリケーション関係のソースとターゲットのシステムを作成する必要があります。
 +
@@ -67,7 +67,7 @@ Amazon FSx for ONTAP固有の要件::
 +
 --
 * Cloud Volumes ONTAP が関係の一部である場合は、VPC ピアリングを有効にするか、Transit Gateway を使用して、VPC 間の接続を確保します。
-* オンプレミスのONTAPクラスターが関係の一部である場合は、Direct Connect または VPN 接続を使用して、オンプレミス ネットワークと AWS VPC 間の接続を確保します。
+* オンプレミス ONTAP クラスタがその関係の一部である場合は、Direct Connect または VPN 接続を使用して、オンプレミス ネットワークと AWS VPC 間の接続を確保してください。
 
 
 --
@@ -84,7 +84,7 @@ Amazon FSx for ONTAP固有の要件::
 . ナビゲーション メニューから、*ストレージ > 管理* を選択します。
 . [システム] ページで、ソース ボリュームを含むシステムを選択し、ボリュームを複製するシステムにドラッグして、[レプリケーション] を選択します。
 +
-残りの手順では、Cloud Volumes ONTAPまたはオンプレミスのONTAPクラスター間の同期関係を作成する方法の例を示します。
+残りの手順では、Cloud Volumes ONTAP またはオンプレミス ONTAP クラスター間で同期関係を作成する方法の例を示します。
 
 . *ソースおよび宛先ピアリング設定*: このページが表示されたら、クラスタ ピア関係のすべてのクラスタ間 LIF を選択します。
 +
