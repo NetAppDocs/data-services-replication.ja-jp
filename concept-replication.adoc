@@ -23,9 +23,9 @@ NetApp SnapMirror は、LAN または WAN 経由で高速にデータを複製�
 
 NetApp Replicationは、NetApp Consoleからアクセスできます。
 
-NetApp Console は、オンプレミスおよびクラウド環境全体にわたる NetApp ストレージとデータサービスをエンタープライズクラスのレベルで一元管理します。Console は、NetApp データサービスにアクセスして使用するために必要です。管理インターフェイスとして、1つのインターフェイスから多数のストレージリソースを管理できます。Console 管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。
+コンソールは、オンプレミスおよびクラウド環境全体にわたって、エンタープライズクラスのレベルで NetApp ストレージとデータサービスの一元管理を提供します。コンソールは、NetApp データサービスにアクセスして使用するために必要です。管理インターフェイスとして、1つのインターフェイスから多数のストレージリソースを管理できます。コンソール管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。
 
-NetApp Consoleの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。
+コンソールの使用を開始するのに、ライセンスやサブスクリプションは必要ありません。ストレージシステムまたは NetApp データサービスへの接続を確保するためにクラウドにコンソールエージェントをデプロイする必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部の NetApp データサービスは、ライセンス制またはサブスクリプション制です。
 
  https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"]の詳細については、こちらをご覧ください。
 
@@ -36,7 +36,7 @@ NetApp Consoleの使用を開始するためにライセンスやサブスクリ
 
 * ONTAPストレージ システム間でデータを複製し、クラウドまたはクラウド間のバックアップと災害復旧をサポートします。
 * 高可用性により DR 環境の信頼性を確保します。
-* ONTAPストレージ間のブロックレベルのレプリケーションは高速かつ効率的で、DR とバックアップの両方に対してきめ細かなリカバリ ポイントが提供されます。
+* ONTAP ストレージシステム間のブロックレベルの効率的なレプリケーションは高速かつ効率的で、ディザスタリカバリとバックアップの両方に対応したきめ細かなリカバリポイントを備えています。
 
 
 
@@ -86,7 +86,7 @@ NetApp Replicationでは、次の種類のシステム間でのデータ レプ�
 [[how-data-replication-works]]
 == データ複製の仕組み
 
-NetApp Replicationは、 SnapMirrorおよびSnapVaultテクノロジーを使用して、個別のONTAPシステム上のボリューム間のデータ レプリケーションを簡素化します。ソース ボリュームとデスティネーション ボリュームを指定し、レプリケーション ポリシーとスケジュールを選択するだけです。
+NetApp Replicationは、SnapMirrorとSnapVaultテクノロジーを使用して、別々のONTAPシステム上のボリューム間のデータレプリケーションを簡素化します。レプリケーションを設定するには、ソースボリュームと宛先ボリュームを特定し、レプリケーションポリシーとスケジュールを選択するだけです。
 
 Cloud Volumes ONTAPの場合、 NetApp Replication は必要なディスクを購入し、関係を構成し、レプリケーション ポリシーを適用して、ボリューム間のベースライン転送を開始します。
 
@@ -110,13 +110,12 @@ NetApp Replicationは、シンプル、ファンアウト、カスケードの�
 [[replicate-data-using-netapp-backup-and-recovery]]
 == NetApp Backup and Recoveryを使用してデータを複製する
 
-NetApp Console エージェント 3.9.31 リリース以降、NetApp Backup and Recovery では、SnapMirror および SnapVault テクノロジーを使用して、別の ONTAP システム上のボリューム間でデータをレプリケートできます。したがって、他の ONTAP システムへのデータのレプリケートを計画しており、同じデータのバックアップをオブジェクトストレージに作成する場合は、単一のサービスでデータ保護のニーズを管理できるように https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["NetApp Backup and Recovery"^]を使用することをご検討ください。
+link:https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["NetApp Backup and Recovery"^]別個の ONTAP システム上のボリューム間でデータをレプリケートしながら、同じデータのバックアップをオブジェクトストレージに作成することができます。同じ ONTAP データのレプリケーションとオブジェクトへのバックアップ保護の両方を単一のサービスで管理する場合は、NetApp Backup and Recovery の使用をご検討ください。
 
-NetApp Backup and Recovery では、NetApp Replication で利用可能な次の機能はサポートされていません：
+NetApp Replicationは、Backup and Recoveryでは利用できない以下の機能をサポートしています。
 
-* ボリューム A からボリューム B へ、そしてボリューム B からボリューム C へレプリケーションが行われるカスケード構成はサポートされていません。
-* FSx for ONTAPシステムとの間でのデータの複製はサポートされていません。
-* ボリュームの 1 回限りのレプリケーションの作成はサポートされていません。
+* Backup and Recovery は現在、FSx for ONTAP システムとの間のデータのレプリケーションをサポートしていません。
+* Backup and Recoveryでは、ボリュームのワンタイムレプリケーションの作成はサポートされていません。
 
 
-したがって、この機能のいずれかが必要な場合は、 NetApp Replication を使用してください。
+さらに、レプリケーションではカスケード関係の設定が容易になります。これらの機能が必要な場合は、NetApp Replicationを使用してください。
